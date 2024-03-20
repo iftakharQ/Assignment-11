@@ -10,11 +10,16 @@
 </head>
 
 <style>
+    body {
+      background: rgb(238,174,202);
+      background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    }
     .container {
         width: 40%;
     }
     form {
         box-shadow: -5px 5px 10px 2px rgba(0, 0, 0, 0.5); 
+        border-radius: 10px;
     }
 </style>
 
@@ -22,6 +27,7 @@
 
   <div class="container d-flex vh-100">
     <form class="my-auto vw-100 bg-body-tertiary p-4">
+      <h3 class="text-center">Login Form</h3>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
